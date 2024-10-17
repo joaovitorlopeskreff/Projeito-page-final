@@ -1,0 +1,378 @@
+
+:root {
+    --primary-color: #0A1128;
+    --white-color: #FFFFFF;
+    --light-gray-color: #eee;
+    --secondary-color: crimson;
+    --gap: 3rem;
+}
+/*classes*/
+.main-bg{
+    background-image: url('/Projeito-page-final/midias/main-bg.svg');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+
+}
+.white-bg {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+.section {
+    min-height: 100vh;
+}
+.menu-spacing {
+    height: 65px;
+}
+.intro-content {
+    position: relative;
+    /* top: -6.2rem; */
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    min-height: 100vh;
+
+}
+.intro-text-content , .intro-img {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+}
+.intro-img img:hover {
+    transition: all 300ms ease-in-out;
+    transform: translate(3%, 3%) scale(1.2);
+}
+.attributes-content {
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+.attributes-content h2 {
+    color: #0A1128;
+    text-shadow: 2px 2px 5px rgba(24, 21, 72, 0.96);
+
+}
+
+.attributes-content h3 {
+    color: #0A1128;
+    text-shadow: 2px 2px 5px rgba(24, 21, 72, 0.76);
+}
+.attributes-content P {
+    margin-bottom: 3rem;
+    color: #0A1128;
+}
+/* .grid-one {
+    display: grid;
+    font-size: 6.2rem;
+    margin-bottom: 5rem;
+    padding-top: 6rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+} */
+.grid-one-content {
+    height: 100vh;
+    max-width: 120rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    
+
+
+}
+.grid-main-heading {
+    margin-bottom: 1rem;
+
+}
+.grid-description {
+    padding-bottom: 11rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+    
+}
+.grid h3 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+    
+
+}
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: 0rem;
+    transform: rotate(5deg);
+
+}
+
+.video-css {
+    width: 40rem;
+}
+.video-css:hover {
+    transition: all 300ms ease-in-out;
+    transform: translate(3%, 3%) scale(1.06);
+}
+.link-curso {
+    color: rgb(133, 0, 0);
+
+}
+.botton-foot {
+    color: #0A1128;
+    text-shadow: 2px 2px 5px rgba(24, 21, 72, 0.76);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+.botton-foot::before {
+    content: '*';
+    color: red;
+    
+}
+.contact-form {
+    grid-column: span 2;
+    box-sizing: border-box;
+
+}
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    
+
+}
+.form-grid legend {
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+    padding-top: 1rem;
+
+}
+.from-grop {
+    margin: 1.5rem;
+    min-width: 40rem;
+    flex: 1 1 auto;
+}
+.from-grop label {
+    display: block;
+    margin-bottom: 1rem;
+    
+}
+.from-grop input, .from-grop textarea {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    
+
+}
+.from-grop input:focus, .from-grop textarea:focus {
+    box-shadow: 0.2rem, 0.2rem 0.5rem var(--secondary-color);
+
+}
+
+.from-grop button {
+    border: 0.5rem solid var(--white-color);
+    border-radius: 2rem;
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    margin-top: -10rem;
+}
+
+.from-grop button:hover {
+    
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+.from-grop ::placeholder {
+    color: rgb(169, 161, 161);
+}
+.final {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5rem;
+    color: #0A1128;
+    text-shadow: 2px 2px 5px rgba(24, 21, 72, 0.76);
+    font-weight: bold;
+    
+    
+}  
+
+
+/*menus*/
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom:  0.1rem solid var(--light-gray-color);
+
+}
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    
+}
+.menu h1 a {
+    color: inherit;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--secondary-color);
+    transition: all 300ms ease-in-out;
+
+}
+.menu ul li a:hover::after {
+    
+    width: 50%;
+    left: 25%;
+}
+.menu ul li a:hover {
+    transition: all 400ms ease-out;
+    transform: translate(3%, 3%) scale(1.2);
+}
+
+/*elementos*/
+
+* {
+
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+ html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+ }
+
+body {
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    line-height: 1.5;
+
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif;
+
+}
+h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+
+}
+h2 {
+    font-size: 6.2rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+a {
+    text-decoration: none;
+}
+.responsive-table {
+    
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table {
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+    
+    
+}
+table caption {
+    color: #0A1128;
+    text-shadow: 2px 2px 5px rgba(24, 21, 72, 0.76);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+table td, table th {
+    padding: 1rem;
+    border: 0.2rem solid var(--light-gray-color);
+    text-align: left;
+}
+tfoot td, table th {
+    background: var(--light-gray-color);
+}
+
+
+
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+
+
+
+
+
+         
