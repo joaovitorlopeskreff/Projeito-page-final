@@ -8,7 +8,7 @@
 }
 /*classes*/
 .main-bg{
-    background-image: url('/Projeito-page-final/midias/main-bg.svg');
+    background-image: url('main-bg.svg');
     background-size: cover;
     background-position: center center;
     color: var(--white-color);
