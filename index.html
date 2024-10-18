@@ -14,13 +14,15 @@
 
 </head>
 <body class="main-bg">
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg" >
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false;">
                 <a href="#">LOGO</a>
             </h1>
                 <nav>
-                    <ul>
+                    <ul onclick="getElementById('close-menu').checked = false;">
                         <li><a href="#intro">Intro</a></li>
                         <li><a href="#attributes">Attributes</a></li>
                         <li><a href="#grid-one">Learn</a></li>
@@ -46,35 +48,38 @@
 
     </section>
 
-    <section id="attributes" class="white-bg section">
+    <section id="remuneration" class="white-bg section">
         <div class="main-content attributes-content">
-            <h2>attributes</h2>
-            <h3>front-end</h3>
-            <p>The front-end is the front line and involves everything that appears to the user, that is, graphical interface projects and interactive elements (layouts, texts, buttons, fields, forms). 
-
-                In this area, the dev needs to master markup languages ​​(HTML, CSS) and others linked to the interface, such as JavaScript; in addition to having knowledge of frameworks, ergonomics, design and user experience.</p>
-            <h3>back-and</h3>
-            <p>In the back-end we have the “behind the scenes” software, but without this structural part, the system simply won’t get off the ground. Devs need to program, code, test and ensure database integrations and server maintenance. 
-
-                In this sense, the back involves more languages ​​and more complex and challenging issues than the front, but it also has a great value in the market.</p>
-            <h3>soft skills</h3>
-            <p>Soft skills is an English term that has become popular in Brazil and refers to non-technical skills, that is, the professional's emotional skills.
-
-                These are fundamental skills for your Software House professionals to deliver more value, not only improving your company's performance, but also making the organizational climate better and bringing more quality to the professional's own experience in the company.</p>
+            <h2>Remuneration</h2>
+            <h3></h3>
+            <p><p class="p-int">front-end</p>
+                The front-end is the front line and involves everything that appears to the user, that is, graphical interface projects and interactive elements (layouts, texts, buttons, fields, forms). 
+    
+                    In this area, the dev needs to master markup languages ​​(HTML, CSS) and others linked to the interface, such as JavaScript; in addition to having knowledge of frameworks, ergonomics, design and user experience.
+                    <p class="p-int">back-end</p>
+                In the back-end we have the “behind the scenes” software, but without this structural part, the system simply won’t get off the ground. Devs need to program, code, test and ensure database integrations and server maintenance. 
+    
+                    In this sense, the back involves more languages ​​and more complex and challenging issues than the front, but it also has a great value in the market.
+                    <p class="p-int">Soft skills </p>
+               Soft skills is an English term that has become popular in Brazil and refers to non-technical skills, that is, the professional's emotional skills.
+    
+                    These are fundamental skills for your Software House professionals to deliver more value, not only improving your company's performance, but also making the organizational climate better and bringing more quality to the professional's own experience in the company
+                </p>
+            
         </div>
-
+    
     </section>
 
     <section id="grid-one" class="grid-one main-bg section">
 
-            <div class="main-content grid-one-content">
+            <div class="main-content grid-one-content intro-content">
                 <h2 class="grid-main-heading">Where I learn to be a full stack developer?</h2>
                 <p class="grid-description">Places where you can learn to be a full stack developer</p>
                 
                 <div class="grid">
                     <article>
                         <h3>Udemy</h3>
-                        <div>
+                        <div class="main-videos">
                             <video class="video-css" controls>
                                 <source src="Curso de JavaScript e TypeScript do basico ao avancado JSTS Udem.mp4" type="video/mp4">
                             </video>
@@ -83,7 +88,7 @@
                     </article>
                     <article>
                         <h3>Udemy</h3>
-                        <div>
+                        <div class="main-videos">
                             <video class="video-css" controls>
                                 <source src="full-stack-udemy.mp4" type="video/mp4">
                             </video>
@@ -92,7 +97,7 @@
                     </article>
                     <article>
                         <h3>Curso em Video</h3>
-                        <div>
+                        <div class="main-videos">
                             <video class="video-css" controls>
                                 <source src="Começa aqui o novo @CursoemVideo de HTML5 e CSS3.MP4" type="video/mp4">
                             </video>
@@ -201,9 +206,11 @@
     </div>
 </div>
 </section>
-<footer class="white-bg">
+<footer class="main-bg">
     <p class="final"> <a href="https://www.youtube.com/watch?v=F8FzP7M-lGc&ab_channel=EdgarEmo" target="_blank"> Feito com muita demora e dificuldade 😠</a></p>
 </footer>
+
+<a class="back-to-top" href="">☝</a>
 
 
        
